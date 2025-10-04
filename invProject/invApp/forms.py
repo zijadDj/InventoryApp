@@ -9,6 +9,7 @@ class ProductForm(forms.ModelForm):
             'product_id': 'Product ID',
             'name': 'Name',
             'sku': 'SKU',
+            'price': 'Price',
             'quantity': 'Quantity',
             'supplier': 'Supplier',
         }
