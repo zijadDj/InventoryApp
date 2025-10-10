@@ -10,26 +10,15 @@ git clone https://github.com/zijadDj/InventoryApp.git
 cd InventoryApp
 ```
 
-### 2. Create and activate a virtual environment:
+### 2. Build and run the containers:
 ```
-python3 -m venv venv
-source venv/bin/activate - For linux
-venv\Scripts\activate  - For Windows
-```
-### 3. Install dependencies:
-```
-pip install django
-pip install django-crispy-forms
-pip install crispy-bootstrap5
-```
-### 4. Apply migrations:
-```
-python manage.py migrate
-```
+docker compose up --build
 
-### 5. Run the development server:
 ```
-python manage.py runserver
+### 3. Apply database migrations:
+```
+docker compose exec web python manage.py migrate
+
 ```
 
 Open your browser at http://127.0.0.1:8000
